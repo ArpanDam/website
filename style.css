@@ -1,8 +1,12 @@
 body {
     margin: 0;
-    margin-top: 50px;
-    font-family: sans-serif;
+    margin-top: 60px;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+    background-color: #ffffff;
 }
+
+/* HEADER */
 
 header {
     display: flex;
@@ -10,14 +14,16 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    height: 50px;
-    line-height: 50px;
-    background-color: #eee;
+    height: 60px;
+    line-height: 60px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    z-index: 1000;
 }
 
 header * {
     display: inline;
-    height: 50px;
+    height: 60px;
 }
 
 header ul {
@@ -25,60 +31,90 @@ header ul {
 }
 
 header li {
-    margin-left: 20px;
-}
-
-section {
-    min-height: 100vh;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-    background-size: cover; /* Add this line */
-    background-position: center center; /* Add this line */
-    background-repeat: no-repeat; /* Add this line */
-    background-attachment: fixed; /* Add this line */
-}
-
-#hero .profile-img {
-    width: 300px;
-    border-radius: 50%;
-}
-
-footer {
-    text-align: center;
-    padding: 50px;
-}
-
-#hero h1 {
-    font-size: 3em;
-}
-
-section h2 {
-    font-size: 2.5em;
-}
-
-section h3 {
-    font-size: 1.5em;
+    margin-left: 25px;
 }
 
 header a {
     text-decoration: none;
-    color: black;
+    color: #222;
+    font-weight: 500;
 }
 
-/* Add everything below here */
+header a:hover {
+    color: #0073e6;
+}
+
+/* SECTIONS */
+
+section {
+    min-height: 100vh;   /* IMPORTANT FIX */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 18%;
+    text-align: left;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* HERO IMAGE */
 
 #hero {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/field.jpg');
+    text-align: center;
+}
+
+#hero .profile-img {
+    width: 260px;
+    border-radius: 50%;
+}
+
+/* TYPOGRAPHY */
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+section h2 {
+    font-size: 2.3em;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+/* PUBLICATIONS SPACING */
+
+ol li {
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #fafafa;
+}
+
+/* OPTIONAL: Softer Backgrounds (Less Template-Like) */
+
+#hero {
+    background-image: linear-gradient(rgba(255,255,255,0.92),rgba(255,255,255,0.92)), 
+    url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/field.jpg');
 }
 
 #about {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/beach.jpg');
+    background-image: linear-gradient(rgba(255,255,255,0.95),rgba(255,255,255,0.95)), 
+    url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/beach.jpg');
 }
 
 #contact {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/canyon.jpg');
+    background-image: linear-gradient(rgba(255,255,255,0.95),rgba(255,255,255,0.95)), 
+    url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/canyon.jpg');
 }
