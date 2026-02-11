@@ -1,120 +1,118 @@
 body {
     margin: 0;
-    margin-top: 60px;
     font-family: Georgia, "Times New Roman", serif;
-    line-height: 1.6;
-    background-color: #ffffff;
+    line-height: 1.7;
+    color: #222;
 }
 
 /* HEADER */
 
 header {
-    display: flex;
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    line-height: 60px;
-    background-color: white;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     z-index: 1000;
 }
 
-header * {
-    display: inline;
-    height: 60px;
+.header-inner{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 20px;
 }
 
-header ul {
-    padding: 0;
+.header-img{
+    width:42px;
+    height:42px;
+    border-radius:50%;
 }
 
-header li {
-    margin-left: 25px;
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:28px;
+    margin:0;
 }
 
-header a {
-    text-decoration: none;
-    color: #222;
-    font-weight: 500;
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
 }
 
-header a:hover {
-    color: #0073e6;
+nav a:hover{
+    color:#0066cc;
 }
 
 /* SECTIONS */
 
-section {
-    min-height: 100vh;   /* IMPORTANT FIX */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 80px 18%;
-    text-align: left;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+section{
+    min-height:100vh;
+    padding:110px 20px 70px;
 }
 
-/* HERO IMAGE */
-
-#hero {
-    text-align: center;
+.section-inner{
+    max-width:900px;
+    margin:auto;
 }
 
-#hero .profile-img {
-    width: 260px;
-    border-radius: 50%;
+/* HERO */
+
+.hero-inner{
+    text-align:center;
 }
 
-/* TYPOGRAPHY */
-
-#hero h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+.profile-img{
+    width:180px;
+    border-radius:50%;
+    margin-bottom:20px;
 }
 
-section h2 {
-    font-size: 2.3em;
-    margin-bottom: 20px;
+.tagline{
+    font-size:1.2rem;
+    color:#555;
 }
 
-section h3 {
-    font-size: 1.6em;
-    margin-bottom: 10px;
+/* HEADINGS */
+
+h1{
+    font-size:2.7rem;
+    margin-bottom:5px;
 }
 
-/* PUBLICATIONS SPACING */
-
-ol li {
-    margin-bottom: 18px;
-    line-height: 1.6;
+h2{
+    margin-top:40px;
+    font-size:2rem;
 }
 
-/* FOOTER */
-
-footer {
-    text-align: center;
-    padding: 40px;
-    background-color: #fafafa;
+h3{
+    margin-top:30px;
 }
 
-/* OPTIONAL: Softer Backgrounds (Less Template-Like) */
-
-#hero {
-    background-image: linear-gradient(rgba(255,255,255,0.92),rgba(255,255,255,0.92)), 
-    url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/field.jpg');
+h4{
+    margin-top:25px;
 }
 
-#about {
-    background-image: linear-gradient(rgba(255,255,255,0.95),rgba(255,255,255,0.95)), 
-    url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/beach.jpg');
+/* LISTS */
+
+ol{
+    padding-left:45px;
 }
 
-#contact {
-    background-image: linear-gradient(rgba(255,255,255,0.95),rgba(255,255,255,0.95)), 
-    url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/canyon.jpg');
+ol li{
+    margin-bottom:16px;
+}
+
+ul li{
+    margin-bottom:8px;
+}
+
+/* LINKS */
+
+a{
+    color:#0066cc;
 }
